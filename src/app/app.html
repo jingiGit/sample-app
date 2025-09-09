@@ -2,7 +2,7 @@
   <!-- Container wrapper -->
   <div class="container-fluid">
     <!-- Left elements -->
-    <div>
+    <div class="d-flex align-items-center">
       <!-- Brand name -->
       <a class="navbar-brand text-white" href="#">
         Electronics Store
@@ -18,15 +18,15 @@
       </ul>
     </div>
 
-    <!-- Rigth elements -->
+    <!-- Right elements -->
     <div class="d-flex align-items-center">
       <!-- Cart Icon -->
       <a class="text-white me-3" href="#">
         <i class="fa fa-shopping-cart"></i>
       </a>
       <!-- Cart Dropdown Menu -->
-      <div class="dropdown-menu dropdown-menu-end show" style="position: absolute; right: 13px; top: 60px"
-        aria-labelledby="navbarDropdownMenuAvatar" data-bs-theme="light">
+      <div class="dropdown-menu dropdown-menu-end show" style="position: absolute; right: 13px; top: 60px;"
+        aria-labelledby="navbarDropdownMenuAvatar">
         <div class="row">
           <!-- Cart Header -->
           <div class="col-8">
@@ -37,7 +37,7 @@
           </div>
         </div>
 
-        <!-- Cart Item Table -->
+        <!-- Cart Items Table -->
         <table class="table table-sm">
           <tbody>
             <!-- Display each cart item -->
@@ -70,3 +70,5 @@
     </div>
   </div>
 </nav>
+<!-- Router outlet for displaying routed components -->
+<router-outlet></router-outlet>
